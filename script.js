@@ -1,5 +1,5 @@
 const apiKey = 'b567b8bd61aeb4df374fe73c94981d99';
-const favorites = [3];
+const favorites = [];
 
 document.getElementById('add-city').addEventListener('click', () => {
     const customCity = document.getElementById('custom-city').value;

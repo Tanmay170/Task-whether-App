@@ -8,53 +8,46 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
         }
 
         header {
+            text-align: center;
             background-color: #3498db;
+            padding: 20px;
+        }
+
+        h1 {
             color: white;
-            padding: 10px;
         }
 
-        .search {
-            margin-top: 20px;
-        }
-
-        #cityInput {
+        input[type="text"] {
             padding: 5px;
-            font-size: 16px;
+            border: none;
         }
 
-        #searchButton {
-            padding: 5px 10px;
+        button {
             background-color: #3498db;
             color: white;
             border: none;
+            padding: 5px 10px;
             cursor: pointer;
         }
 
-        .favorites {
-            margin-top: 20px;
-            text-align: left;
+        #favorites {
+            display: flex;
+            justify-content: center;
         }
 
-        .weather-display {
-            margin-top: 20px;
-        }
-
-        #favoriteCities {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 5px;
+        #favorites>div {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
             cursor: pointer;
         }
 
-        #temperature {
-            font-weight: bold;
+        #weather-display {
+            text-align: center;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -62,29 +55,14 @@
 <body>
     <header>
         <h1>Weather App</h1>
+        <input type="text" id="custom-city" placeholder="Enter a city">
+        <button id="add-city">Add City</button>
     </header>
-
-    <div class="search">
-        <input type="text" id="cityInput" placeholder="Enter a city">
-        <button id="searchButton">Search</button>
-    </div>
-
-    <div class="favorites">
-        <h2>Favorites</h2>
-        <ul id="favoriteCities">
-            <!-- Add your favorite cities here as list items -->
-            <li>Delhi</li>
-            <li>Mumbai</li>
-            <li>Chennai</li>
-        </ul>
-    </div>
-
-    <div class="weather-display">
-        <h2>Weather in <span id="cityName">City Name</span></h2>
-        <p>Temperature: <span id="temperature">--°C</span></p>
-        <p>Weather: <span id="weatherDescription">--</span></p>
-    </div>
-
+    <section id="favorites">
+    </section>
+    <section id="weather-display">
+    </section>
+    <script src="script.js"></script>
 </body>
 
 </html>

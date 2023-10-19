@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+        }
+
+        .search {
+            margin-top: 20px;
+        }
+
+        #cityInput {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        #searchButton {
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .favorites {
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .weather-display {
+            margin-top: 20px;
+        }
+
+        #favoriteCities {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        #temperature {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="Enter a city">
+        <button id="searchButton">Search</button>
+    </div>
+
+    <div class="favorites">
+        <h2>Favorites</h2>
+        <ul id="favoriteCities">
+            <!-- Add your favorite cities here as list items -->
+            <li>Delhi</li>
+            <li>Mumbai</li>
+            <li>Chennai</li>
+        </ul>
+    </div>
+
+    <div class="weather-display">
+        <h2>Weather in <span id="cityName">City Name</span></h2>
+        <p>Temperature: <span id="temperature">--°C</span></p>
+        <p>Weather: <span id="weatherDescription">--</span></p>
+    </div>
+
+</body>
+
+</html>

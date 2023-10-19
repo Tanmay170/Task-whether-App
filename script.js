@@ -1,5 +1,5 @@
 const apiKey = 'b567b8bd61aeb4df374fe73c94981d99';
-const favorites = [];
+const favorites = [3];
 
 document.getElementById('add-city').addEventListener('click', () => {
     const customCity = document.getElementById('custom-city').value;
@@ -40,7 +40,3 @@ function updateFavorites() {
         favoritesSection.appendChild(cityElement);
     });
 }
-
-// You can pre-populate favorites with a few cities if you like.
-// favorites.push('New York', 'Los Angeles', 'London');
-// updateFavorites();
